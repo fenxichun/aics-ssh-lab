@@ -1,0 +1,38 @@
+# === 凭据：绝对不能提交 ===
+aics.env
+.env
+*.env
+!aics.env.example
+*.pem
+*.key
+id_rsa*
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# === 临时产物 ===
+*.log
+run.log
+
+# === 从容器拉下来的实验代码 / 数据（本地留档用，别提交） ===
+/workspace/
+/pulled/
+exp_*/
+out/
+logs/
+data/
+models/
+*.pth
+*.so
+
+# === 编辑器 / 系统 ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
